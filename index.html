@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Организация быстрых свиданий "Ты и Я"</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="css/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="module" src="js/schedule.js" defer></script>
+	<script src="js/not-schedule-item.js" defer></script>
+	<script src="js/popupOpen.js" defer></script>
+	<script src="js/schedule-popup.js" defer></script>
+	<script src="js/menu__burger.js" defer></script>
+	<script src="js/scroll.js" defer></script>
+	<script src="js/phpmailer.js" defer></script>
+	
+</head>
+<body>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+		var z = null;m[i].l=1*new Date();
+		for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+		k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(90289218, "init", {
+				clickmap:true,
+				trackLinks:true,
+				accurateTrackBounce:true,
+				webvisor:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/90289218" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<div class="wrapper"></div>
+	
+	<div class="cookie-permission">
+		<div class="cookie-permission__close">X</div>
+		<div class="cookie-permission__content">
+			<h2 class="cookie-permission__title">Использование файлов Cookie</h2>
+			<div class="cookie-permission__text">Сайт использует файлы Cookie (куки-файлы), 
+				сервисы веб-аналитики для сбора статистики посещений сайта. 
+				Продолжая использовать сайт Вы соглашаетесь на 
+				использование файлов Cookie и сбор данных о Вашем посещении сайта. 
+			</div>
+			<button class="cookie-permission__btn red-btn">Согласен</button>
+		</div>
+	</div>
+	
+	<script src="js/cookie-permission.js" defer></script>
+	
+	<div class="_sending-form">
+		<svg class="spinner" viewBox="0 0 50 50">
+			<circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+		</svg>
+	</div>
+
+	<div class="menu">
+		<div class="menu__body">		 
+						 <div class="container">
+								 <div class="menu__header">
+										 <div class="menu__logo">
+											<img src="img/logo.svg" alt="логотип">
+										 </div>
+										 <div class="block">
+												 <div class="menu__close">
+														X
+												 </div>
+										 </div>
+								 </div>
+						 </div>
+						 <ul class="menu__links">
+							<li class="menu__item">
+								<a href="#main" class="menu__link js-scroll">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="#schedule" class="menu__link js-scroll">Расписание</a>
+							</li>
+							<li class="menu__item">
+								<a href="#conditions" class="menu__link js-scroll">Условия проведения</a>
+							</li>
+							<li class="menu__item">
+								<a href="#info" class="menu__link js-scroll">Все про "Быстрые свидания"</a>
+							</li>
+							<li class="menu__item">
+								<a href="#we-best" class="menu__link js-scroll">Вы не пожалеете</a>
+							</li>
+						 </ul>
+
+				 
+		</div>
+ </div>
+
+	<header class="header lock__padding">
+		<div class="container">
+			<div class="header__body">
+				<div class="header__logo logo">
+					<div class="block"><img src="img/logo.svg" alt="Логотип"></div>
+				</div>
+				<ul class="header__list">
+					<li class="header__item">
+						<a href="#main" class="header__link js-scroll">Главная</a>
+					</li>
+					<li class="header__item">
+						<a href="#schedule" class="header__link js-scroll">Расписание</a>
+					</li>
+					<li class="header__item">
+						<a href="#conditions" class="header__link js-scroll">Условия проведения</a>
+					</li>
+					<li class="header__item">
+						<a href="#info" class="header__link js-scroll">Все про "Быстрые свидания"</a>
+					</li>
+					<li class="header__item">
+						<a href="#we-best" class="header__link js-scroll">Вы не пожалеете</a>
+					</li>
+				</ul>
+				<div class="header__menu-burger">
+					<span class="line line_1"></span>
+					<span class="line line_2"></span>
+					<span class="line line_3"></span>
+			</div>
+			</div>
+		</div>
+	</header>
+
+	 <main class="main" id="main">
+		<div class="main__title section-title">
+			Ваше счастье в ваших руках!
+		</div>
+		<div class="container">
+			<div class="main__body">
+				<div class="main__image">
+					<img src="img/main/img.jpg" alt="Пара">
+				</div>
+				<div class="main__content">
+					<div class="blob-phone">
+						<div>
+							<p class="num-phone">+7 (952) 026-59-70</p>
+							<p class="text">Позвоните нам!</p>
+						</div>
+					</div>
+					<form class="main__form form-order " id="sign-up" data-action="sendmail_order.php">
+						<p class="title">Быстрые свидания в<br>Чувашии от <span class="red-text">1000 руб.</span></p>
+						<p class="text">Желаете найти себе пару</p>
+						<p class="text red-text">или</p>
+						<p class="text">познакомиьтся с новыми людьми?</p>
+						<p class="text form-order__footer">Запишитесь и мы вам перезвоним!</p>
+						<input class="transp-input _req _name" type="text" name="name" placeholder="Введите имя...">
+						<input class="transp-input _req _phone" type="tel" name="phone" placeholder="Введите телефон...">
+						<div class="checkbox">
+							<input type="checkbox" id="formAgreement-1" class="checkbox__input _req" name="agreement">
+							<label for="formAgreement-1" class="checkbox__label">
+									<span>Я даю свое согласие на обработку 
+											персональных данных в соответствии с 
+											<a href="privacy.html" target="_blank">Условиями</a>
+									</span>
+							</label>
+					</div>
+						<button class="red-btn" type="submit">Записаться</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="schedule" id="schedule">
+		<div class="main__title section-title">
+			Расписание
+		</div>
+
+			<div class="schedule__text">
+				<div class="container">
+					<div class="row">
+						<div class="text">
+							Определите подходящую Вам группу с помощью возрастной таблицы. Найдите свою/соответствующую (как тебе больше нравится?) группу в расписании свиданий и нажмите на кнопку "Забронировать". В день мерроприятия мы вышлем вам сообщение с подробным адресом места проведения.
+						</div>
+						<table class="schedule__table table">
+							<thead>
+								<tr>
+									<th class="table__title" colspan="3">Возрастная таблица</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="table__cell"><div class="group-name">Основная группа</div></td>
+									<td class="table__cell">Женщины: 30 - 37</td>
+									<td class="table__cell">Мужчины: 33 - 40</td>
+								</tr>
+								<tr>
+									<td class="table__cell"><div class="group-name">Старшая группа</div></td>
+									<td class="table__cell">Женщины: 38 - 45</td>
+									<td class="table__cell">Мужчины: 41 - 49</td>
+								</tr>
+								<tr>
+									<td class="table__cell"><div class="group-name">Третий возраст</div></td>
+									<td class="table__cell">Женщины: 46 - 55</td>
+									<td class="table__cell">Мужчины: 50 - 57</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div> 
+
+			<div class="schedule__no-place">					
+					<div class="elem">
+						<p class="text">Если вы не нашли подходящую<br>вам дату, то нажмите на кнопку</p>
+						<a class="red-btn js-scroll" href="#sign-up">Записаться</a>
+					</div>
+			</div>
+			<div class="schedule__group">
+				<div class="container">
+					<div class="groups">
+						<div class="group">
+							<div class="group__body">
+								<div class="group__name">Основная группа</div>
+								<div class="group__list" data-group-id="1"></div>
+							</div>
+						</div>
+						<div class="group">
+							<div class="group__body">
+								<div class="group__name">Старшая группа</div>
+								<div class="group__list" data-group-id="2"></div>
+							</div>
+						</div>
+						<div class="group">
+							<div class="group__body">
+								<div class="group__name">Третий возвраст</div>
+								<div class="group__list" data-group-id="3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	</section>
+
+	<section class="conditions" id="conditions">
+		<div class="conditions__title section-title">
+			Условия проведения
+		</div>
+
+		<div class="container">
+			<ul class="conditions__list">
+				<li class="conditions__item">Дресс-код: нельзя приходить в спортивной одежде.</li>
+				<li class="conditions__item">Нельзя опаздывать, опоздавшие на 10-15 минут гости, могут не попасть на вечер.</li>
+				<li class="conditions__item">Нельзя приходить в состоянии алкогольного и наркотического опьянения. Употребление спиртного во время вечера, запрещено.</li>
+				<li class="conditions__item">Опалата только по прибытии в заведение.</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="info" id="info">
+		<div class="container">
+	
+			<div class="info__title section-title">
+				Все про “Быстрое свидание”
+			</div>
+
+			<div class="info__card">
+				<h2 class="popup-info__title">Что такое быстрое свидание</h2>
+					<div class="popup-info__text">
+						<p>Быстрые свидания -специально организованное мероприятие в виде мини-свиданий. Данный формат позволяет познакомить друг с другом одиноких мужчин и женщин или просто скрасить свой вечер!</p>
+						<p>Всего несколько минут позволят вам определить: "ваш" человек находится перед вами или нет, стоит ли продолжать с ним встречи, нравится ли вам его манера общения и поведения. По словам психологов, достаточно всего пару минут разговоров для формирования первого впечатления о человеке. В этом большое преимущество личных встреч, по сравнению с виртуальным общением в интернете.</p>
+					</div>
+				</div>
+
+			<div class="info__card">
+				<h2 class="popup-info__title">Преимущества быстрых свиданий</h2>
+					<div class="popup-info__cards">
+						<div class="popup-info__card">
+							<img src="img/popup/1.svg" alt="1-ое преимущество">
+							<p class="card__text">У всех участников одна цель-найти пару</p>
+						</div>
+						<div class="popup-info__card">
+							<img src="img/popup/2.svg" alt="1-ое преимущество">
+							<p class="card__text">Экономия времени на поиски пары</p>
+						</div>
+						<div class="popup-info__card">
+							<img src="img/popup/3.svg" alt="1-ое преимущество">
+							<p class="card__text">Общение с новыми людьми</p>
+						</div>
+						<div class="popup-info__card">
+							<img src="img/popup/4.svg" alt="1-ое преимущество">
+							<p class="card__text">Отсутствие долгих переписок и сомнительных встреч</p>
+						</div>
+				</div>
+			</div>
+
+			<div class="info__card">
+				<h2 class="popup-info__title">Как проходят быстрые свидания</h2>
+				<div class="popup-info__text">
+					<p>На мероприятие собирается определенное количество людей, часто не превышающее двадцати. Женщины сидят за столиком, а мужчины передвигаются от одного к другому. Общение за каждым столиком длится по положенному правилу 7 минут. За это время пара знакомится и оценивает своего собеседника. Особенно подготовленные участники проводят психологические тесты или мини-игры на проверку взаимодействия друг с другом.</p>
+					<p>В процессе каждый участник заполняет таблицу с указанием симпатии своему собеседнику. По завершению вечера каждый получает информацию о полученных симпатиях с возможностью продолжить общение с избранником. За один вечер каждый участник может провести около десяти мини-встреч.</p>
+				</div>
+			</div>
+
+			<div class="info__card">
+				<h2 class="popup-info__title">Что делать на быстрых свиданиях</h2>
+				<ul class="popup-info__list">
+					<li>Будьте собой. Не пытайтесь казаться тем, кем не являетесь;</li>
+					<li>Расслабьтесь получайте удовольствие. Поймите, что вы никому ничем не обязаны;</li>
+					<li>Будьте готовы к необычным предложениям. Не следует реагировать на них слишком остро, не воспринимайте их всерьез. Вы можете прекратить общение или сказать собеседнику, что не намерены отвечать на глупые предложения, либо отшутитесь;</li>
+					<li>О чем говорить?  Расскажите о себе, спросите все, что вас интересует. Можно обсудить хобби, интересы, музыку, кино, путешествия, предпочтения. Задавайте нестандартные вопросы и будьте честны. Не стоит разговаривать о погоде, деньгах, политике, домашних животных. Банальные темы не интересны. Шутите и импровизируйте.</li>
+				</ul>
+			</div>
+
+			<div class="info__card">
+				<h2 class="popup-info__title">Примеры вопросов для быстрых свиданий</h2>
+				<ol class="popup-info__list">
+					<li>За 2 минуты расскажи свою жизненную историю</li>
+					<li>Как выглядит отпуск вашей мечты?</li>
+					<li>Чем вы интересуетесь?</li>
+					<li>Что вы ищете в друге? Какие качества?</li>
+					<li>Есть ли у вас скрытые таланты?</li>
+					<li>Вы предпочитаете жить в городе или загородом?</li>
+					<li>Считаете ли вы себя романтиком?</li>
+					<li>Есть ли у тебя любимое место в нашем городе?</li>
+					<li>Есть ли у тебя любимый фильм?</li>
+					<li>Что бы ты хотел изменить в своей жизни?</li>
+					<li>Что ты любишь делать после работы?</li>
+					<li>У тебя есть список желаний?</li>
+					<li>Что бы ты хотел получить в ближайшие пять лет?</li>
+					<li>Ты хотел бы поменять сферу деятельности?</li>
+					<li>Как бы в трех словах описал тебя лучший друг?</li>
+					<li>Как выглядит дом твоей мечты?</li>
+				</ol>
+			</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="we-best" id="we-best">
+		<div class="info__title section-title">
+			Вы не пожалеете
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="we-best__content">
+					<p class="we-best__text">
+						Мы предлагаем вам уютную атмосферу, приятный вечер, новые знакомства и возможность встретить свою любовь.
+						Главное помните: Ваша счастье в ваших руках. Начните действовать прямо сейчас!
+					</p>
+					<p class="we-best__main-text">
+						Мы вас ждем!
+					</p>
+				</div>
+	
+				<form class="we-best__form form-order " data-action="sendmail_order.php" >
+					<p class="title">Быстрые свидания в<br>Чувашии от <span class="red-text">1000 руб.</span></p>
+					<p class="text">Желаете найти себе пару</p>
+					<p class="text red-text">или</p>
+					<p class="text">познакомиьтся с новыми людьми?</p>
+					<p class="text form-order__footer">Запишитесь и мы вам перезвоним!</p>
+					<input class="transp-input _req _name" type="text" name="name" placeholder="Введите имя...">
+					<input class="transp-input _req _phone" type="tel" name="phone" placeholder="Введите телефон...">
+					<div class="checkbox">
+						<input type="checkbox" id="formAgreement-2" class="checkbox__input _req" name="agreement">
+						<label for="formAgreement-2" class="checkbox__label">
+								<span>Я даю свое согласие на обработку 
+										персональных данных в соответствии с 
+										<a href="privacy.html" target="_blank">Условиями</a>
+								</span>
+						</label>
+				</div>
+					<button class="red-btn" type="submit">Записаться</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__body">
+				<div class="footer__start">
+					<div class="logo footer__logo">
+						<img src="img/logo.svg" alt="логотип">
+					</div>
+					<div class="footer__phone">
+						<p>Позвоните нам:</p>
+						<p><span class="phone">+7 (952) 026-59-70</span></p>
+					</div>
+				</div>
+				<div class="footer__info">
+					<a class="agreement" href="privacy.html">Соглашение об обработке персональных данных</a>
+					<p class="photo">Фото взято с сайта: <a href="https://ru.freepik.com/" target="_blank">https://ru.freepik.com/</a></p>
+					<p>©️ Все права защищены</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="popup" id="popup-book">
+		<form class="popup__body form-book " data-action="sendmail_book.php">	
+			<div class="popup__close">X</div>
+			<div class="popup__title">
+				Забронировать: <span class="red-text" id="date"></span> <span id="month"></span> <span class="line"></span> <span id="time" class="red-text"></span>
+			</div>
+			<div class="popup__text">
+				Мы запишем вас на назначенную дату. <br>
+				За день до вечера мы вам перезвоним.
+			</div>
+			<input type="text" class="transp-input _req _name" name="name" placeholder="Введите имя...">
+			<input type="tel" class="transp-input _req _phone" name="phone" placeholder="Введите телефон...">
+			<input class="hide-input" name="date">
+			<input class="hide-input" name="month">
+			<input class="hide-input" name="time">
+			<input class="hide-input" name="place">
+			<input class="hide-input" name="price">
+
+			<div class="checkbox">
+				<input type="checkbox" id="formAgreement-3" class="checkbox__input _req" name="agreement">
+				<label for="formAgreement-3" class="checkbox__label">
+						<span>Я даю свое согласие на обработку 
+								персональных данных в соответствии с 
+								<a href="privacy.html" target="_blank">Условиями</a>
+						</span>
+				</label>
+		</div>
+			<button class="red-btn">Забронировать</button>
+		</form>
+	</div>
+</body>
+
+</html>
